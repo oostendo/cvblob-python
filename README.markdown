@@ -9,19 +9,19 @@ possible to the C++ functions so that you can use the C++ docs/example code.
 
 Conventions are similar to the OpenCV 2.2 python interface, in brief:
 
- - functions: cvFUNCTIONNAME is contracted to FUNCTIONAME
- - data structures: CvDATATYPE is contracted to DATATYPE 
+ - functions: cvFUNCTIONNAME to FUNCTIONAME eg cvRenderBlob -> cvblob.RenderBlob
+ - data structures: CvDATATYPE to DATATYPE eg cvTrack -> cvblob.Track
  - color triples and coordinates are expressed as tuples
  - vectors/arrays/lists expressed as python lists
  - maps are expressed as python dicts
 
 For examples, look at the test python code.
 
-###Brief install instructions (for OpenCV 2.2, cvBlob 0.10.3 under Ubuntu 10.10):
+###Brief install instructions (for OpenCV 2.2, cvBlob 0.10.3, Python 2.6, Boost Python 1.42 under Ubuntu 10.10):
 
 ####Step 1: install some prerequisite libraries:
 
-  apt-get install build-essential swig gfortran cmake gcc pkg-config libjpeg62-dev libtiff4-dev libpng12-dev libopenexr-dev libavformat-dev libswscale-dev liblapack-dev python-dev python-setuptools python-nose boost-build libboost-all-dev
+    apt-get install build-essential swig gfortran cmake gcc pkg-config libjpeg62-dev libtiff4-dev libpng12-dev libopenexr-dev libavformat-dev libswscale-dev liblapack-dev python-dev python-setuptools boost-build libboost-all-dev
 
 ####Step 2: Download most recent versions of NumPy, OpenCV, and cvBlob
 
@@ -67,6 +67,13 @@ For examples, look at the test python code.
 ###License
 This is offered under the GNU lesser GPL, the same license as cvblob
 http://www.gnu.org/licenses/lgpl.html
+
+###Todo
+
+  - finish tracking and contour wrappers
+  - wrapper cvRelease* functions
+  - add cmake or .egg setup ability 
+  - revamp tests as nose tests
 
 
 ###Acknowledgements
