@@ -1,12 +1,14 @@
-Python Wrapper for the cvblob extension to OpenCV
+#python-cvblob
+##Python Wrapper for the cvblob extension to OpenCV
 
-2011 Nathan Oostendorp, Ingenuitas Inc.
+###2011 Nathan Oostendorp, Ingenuitas Inc.
 
 This wrapper provides cvBlob's functionality wrappered in a style similar to
 the native OpenCV python bindings.  The function calls are as close as 
 possible to the C++ functions so that you can use the C++ docs/example code.
 
 Conventions are similar to the OpenCV 2.2 python interface, in brief:
+
  - functions: cvFUNCTIONNAME is contracted to FUNCTIONAME
  - data structures: CvDATATYPE is contracted to DATATYPE 
  - color triples and coordinates are expressed as tuples
