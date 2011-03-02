@@ -1,0 +1,10 @@
+id
+label
+minx
+maxx
+miny
+maxy
+centroid
+lifetime
+active
+inactive
