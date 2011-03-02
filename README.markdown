@@ -21,7 +21,9 @@ For examples, look at the test python code.
 
 ####Step 1: install some prerequisite libraries:
 
-    apt-get install build-essential swig gfortran cmake gcc pkg-config libjpeg62-dev libtiff4-dev libpng12-dev libopenexr-dev libavformat-dev libswscale-dev liblapack-dev python-dev python-setuptools boost-build libboost-all-dev
+    apt-get install build-essential swig gfortran cmake gcc pkg-config libjpeg62-dev libtiff4-dev\
+    libpng12-dev libopenexr-dev libavformat-dev libswscale-dev liblapack-dev python-dev\
+    python-setuptools boost-build libboost-all-dev
 
 ####Step 2: Download most recent versions of NumPy, OpenCV, and cvBlob
 
