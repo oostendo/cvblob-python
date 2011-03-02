@@ -1,6 +1,4 @@
 #include <boost/python.hpp>
-#include "boost/python/extract.hpp"
-#include "boost/python/tuple.hpp"
 #include <iostream>
 #include <opencv/cv.h>
 #include <cvblob.h> 
