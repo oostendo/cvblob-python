@@ -17,24 +17,25 @@ Conventions are similar to the OpenCV 2.2 python interface, in brief:
 
 For examples, look at the test python code.
 
-Brief install instructions (for OpenCV 2.2, cvBlob 0.10.3 under Ubuntu 10.10):
+###Brief install instructions (for OpenCV 2.2, cvBlob 0.10.3 under Ubuntu 10.10):
 
-Step 1: install some prerequisite libraries:
+####Step 1: install some prerequisite libraries:
 
   apt-get install build-essential swig gfortran cmake gcc pkg-config libjpeg62-dev libtiff4-dev libpng12-dev libopenexr-dev libavformat-dev libswscale-dev liblapack-dev python-dev python-setuptools python-nose boost-build libboost-all-dev
 
-Step 2: Download most recent versions of NumPy, OpenCV, and cvBlob
+####Step 2: Download most recent versions of NumPy, OpenCV, and cvBlob
+
  - http://sourceforge.net/projects/numpy/files/NumPy/
  - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/
  - http://code.google.com/p/cvblob/
   
-Step 3: Make NumPy, OpenCV, and cvBlob 
+####Step 3: Make NumPy, OpenCV, and cvBlob 
 
-Numpy:
+#####Numpy:
 
-  python setup.py build --fcompiler=gnu95
-  python setup.py install
-  python -c 'import numpy; numpy.test()'
+    python setup.py build --fcompiler=gnu95
+    python setup.py install
+    python -c 'import numpy; numpy.test()'
 
 OpenCV:
 
