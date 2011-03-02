@@ -1,7 +1,7 @@
 #python-cvblob
 ##Python Wrapper for the cvblob extension to OpenCV
 
-###2011 Nathan Oostendorp, Ingenuitas Inc.
+###2011 Nathan Oostendorp, Ingenuitas Inc. http://ingenuitas.com
 
 This wrapper provides cvBlob's functionality wrappered in a style similar to
 the native OpenCV python bindings.  The function calls are as close as 
@@ -37,30 +37,38 @@ For examples, look at the test python code.
     python setup.py install
     python -c 'import numpy; numpy.test()'
 
-OpenCV:
+#####OpenCV:
 
-  mkdir BUILD
-  cd BUILD
-  cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_PYTHON_SUPPORT=ON -D WITH_TBB=ON -D CMAKE_INSTALL_PREFIX=/usr ..
-  make
-  make install
-  python -c ‘import cv;’
+    mkdir BUILD
+    cd BUILD
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_PYTHON_SUPPORT=ON -D WITH_TBB=ON -D CMAKE_INSTALL_PREFIX=/usr ..
+    make
+    make install
+    python -c ‘import cv;’
 
-cvBlob:
+#####cvBlob:
 
-  cmake
-  make
-  make install
+    cmake
+    make
+    make install
+    cd test
+    ../bin/test
 
-cvblob-python (from your cvblob directory):
+#####cvblob-python (from your cvblob directory):
 
-  cd cvblob-VERSION/contrib
-  git git://github.com/oostendo/cvblob-python.git python 
-  cd python/cvblob
-  ./build.sh (you may need to edit if you have a different python than 2.6)
-  cd ..
-  python test.py
-  cp cvblob /usr/lib/python2.6/site-packages (or wherever)
+    cd cvblob-VERSION/contrib
+    git git://github.com/oostendo/cvblob-python.git python 
+    cd python/cvblob
+    ./build.sh (you may need to edit if you have a different python than 2.6)
+    cd ..
+    python test.py
+    cp cvblob /usr/lib/python2.6/site-packages (or wherever)
   
+###License
+This is offered under the GNU lesser GPL, the same license as cvblob
+http://www.gnu.org/licenses/lgpl.html
+
+
+###Acknowledgements
 Thanks to Willowgarage for OpenCV, Cristobal Carnero Linan for cvblob,
 Dave Abrhams for Boost Python, and et al.
