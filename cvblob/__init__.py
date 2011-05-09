@@ -9,8 +9,8 @@
 #  the real "guts" of this project is in _cvblob.so
 #
 
-import cv;
-from _cvblob import *;
+import cv
+from _cvblob import *
 
 #chaincode constants
 CV_CHAINCODE_UP = 0 # Up.
