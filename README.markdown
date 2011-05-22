@@ -59,7 +59,7 @@ For examples, look at the test python code.
 #####cvblob-python (from your cvblob directory):
 
     cd cvblob-VERSION/contrib
-    git git://github.com/oostendo/cvblob-python.git python 
+    git clone git://github.com/oostendo/cvblob-python.git python 
     cd python/cvblob
     ./build.sh (you may need to edit if you have a different python than 2.6)
     cd ..
