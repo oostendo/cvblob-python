@@ -280,7 +280,7 @@ void UpdateTracks(boost::python::dict b, boost::python::dict t, double thDistanc
 
   //we need to make sure everything in *tracks is represented in dict
   for (cvb::CvTracks::const_iterator i = tracks->begin(); i != tracks->end(); i++) {
-    b[i->first] = (Track*)i->second;
+    t[i->first] = (Track*)i->second; 
   }
 }
 
