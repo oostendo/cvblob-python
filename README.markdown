@@ -1,6 +1,12 @@
 #python-cvblob
 ##Python Wrapper for the cvblob extension to OpenCV
 
+#python-cvblob is deprecated!  Please use the SimpleCV library instead http://simplecv.org it has fast findBlobs() functions!
+
+
+
+
+
 ###2011 Nathan Oostendorp, Ingenuitas Inc. http://ingenuitas.com
 
 This wrapper provides cvBlob's functionality wrappered in a style similar to
